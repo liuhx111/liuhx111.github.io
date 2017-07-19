@@ -2421,8 +2421,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		height: 600px;
-        width: 800px;
+		height: 200px;
 	}
 
 		.image img {
