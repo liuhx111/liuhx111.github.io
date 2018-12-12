@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangxin Liu - UCLA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="owwwlab.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <meta name="description" content="A theme for faculty profile page" />
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+
+        <link rel="shortcut icon" href="../favicon.ico">
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+
+        
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.min.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
+
+            <div id="sidebar">
+                <div id="sidebar-wrapper">
+                    <div id="sidebar-inner">
+                        <!-- Profile/logo section-->
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Hangxin Liu</h2>
+                                <h3>UCLA</h3>
+                            </div>   
+                        </div>
+                        <!-- /Profile/logo section-->
+
+                        <!-- Main navigation-->
+                        <div id="main-nav">
+                            <ul id="navigation">
+                                <li>
+                                  <a href="index.html">
+                                    <i class="fa fa-user"></i>
+                                    <div class="text">About Me</div>
+                                  </a>
+                                </li>  
+                                
+                                <!-- <li>
+                                  <a href="research.html">
+                                    <i class="fa fa-book"></i>
+                                    <div class="text">Research</div>
+                                  </a>
+                                </li>  -->
+                                
+                                <li class="currentmenu">
+                                  <a href="publication.html">
+                                    <i class="fa fa-edit"></i>
+                                    <div class="text">Publications</div>
+                                  </a>
+                                </li> 
+
+                                <li>
+                                  <a href="projects.html">
+                                    <i class="fa fa-clock-o"></i>
+                                    <div class="text">Projects</div>
+                                  </a>
+                                </li>
+
+                                <li>
+                                  <a href="gallery.html">
+                                    <i class="fa fa-picture-o"></i>
+                                    <div class="text">Gallery</div>
+                                  </a>
+                                </li>
+
+                                <!-- <li>
+                                  <a href="contact.html">
+                                      <i class="fa fa-calendar"></i>
+                                      <div class="text">Contact Me</div>
+                                  </a>
+                                </li> -->
+
+                                <li class="external">
+                                  <a href="cv.pdf">
+                                      <i class="fa fa-download"></i>
+                                      <div class="text">Download CV</div>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Main navigation-->
+                        <!-- Sidebar footer -->
+                        <div id="sidebar-footer">
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+
+        
+                            <div id="copyright">Copyright text here</div>
+                    
+                        </div>
+                        <!-- /Sidebar footer -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="main">
+            
+                <div id="publications" class="page">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+                                    <h2 class="title">Publications</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+                            
+                            <div class="section color-1" id="filters">
+                                <div class="section-container">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <h3>Filter by type:</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                                <option class="filter" value="all" selected>All types</option>
+                                                <option class="filter" value="jpaper">Jounal Papers</option>
+                                                <option class="filter" value="cpaper">Conference Papers</option>
+                                                <option class="filter" value="robot">Robotics</option>
+                                                <option class="filter" value="ar">AR</option>
+                                                <option class="filter" value="sense">Sensing</option>
+<!--                                                 <option class="filter" value="bookchapter">Book Chapters</option>
+                                                <option class="filter" value="book">Books</option> -->
+                                                <!-- <option class="filter" value="report">Reports</option>
+                                                <option class="filter" value="tpaper">Technical Papers</option> -->
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-3" id="sort">
+                                            <span>Sort by year:</span>
+                                            <div class="btn-group pull-right"> 
+
+                                                <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="fa fa-sort-numeric-asc"></i></button>
+                                                <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="fa fa-sort-numeric-desc"></i></button>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                
+                                            <div class="item mix cpaper robot" data-year="2019.1">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                <img src="teaser/mirror_aaai19.gif" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">Mirroring without Overimitation: Learning Functionally Equivalent Manipulation Actions</h4>
+                                                                <div class="pubauthor"><strong>Hangxin Liu</strong>, 
+                                                                    <a href="http://wellyzhang.github.io/">Chi Zhang</a>, 
+                                                                    <a href="https://www.yzhu.io">Yixin Zhu</a>,
+                                                                    <a href="https://www.seas.upenn.edu/~cffjiang/">Chenfanfu Jiang</a>,
+                                                                    <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+                                                                </div>
+                                                                <br/>
+                                                                <div class="pubcite">AAAI Conference on Artificial Intelligence (AAAI), 2019</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span> <span class="label label-primary">Robotics</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">This paper presents a mirroring approach, inspired by the neuroscience discovery of the mirror neurons, to transfer demonstrated manipulation actions to robots. Designed to address the different embodiments between a human (demonstrator) and a robot, this approach extends the classic robot Learning from Demonstration (LfD) in the following aspects: i) It incorporates fine-grained hand forces collected by a tactile glove in demonstration to learn robot's fine manipulative actions; ii) Through model-free reinforcement learning and grammar induction, the demonstration is represented by a goal-oriented grammar consisting of goal states and the corresponding forces to reach the states, independent of robot embodiments; iii) A physics-based simulation engine is applied to emulate various robot actions and mirrors the actions that are functionally equivalen} to the human's in the sense of causing the same state changes by exerting similar forces. Through this approach, a robot reasons about which forces to exert and what goals to achieve to generate actions (i.e., mirroring), rather than strictly mimicking demonstration (i.e., overimitation). Thus the embodiment difference between a human and a robot is naturally overcome. In the experiment, we demonstrate the proposed approach by teaching a real Baxter robot with a complex manipulation task involving haptic feedback---opening medicine bottles.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="item mix cpaper robot ar" data-year="2018.05">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                <img src="teaser/patching_icra18.gif" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">Interactive Robot Knowledge Patching using Augmented Reality</h4>
+                                                                <div class="pubauthor"><strong>Hangxin Liu</strong>*, <a href="https://www.linkedin.com/in/victor-zhang-a8b303108/">Yaofang Zhang</a>*, <a href="#">Wenwen Si</a>, <a href="https://xuxie1031.github.io/">Xu Xie</a>, <a href="https://www.yzhu.io">Yixin Zhu, <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+                                                                 <br /> * equal contributors</div>
+                                                                <div class="pubcite">IEEE International Conference on Robotics and Automation (ICRA), 2018</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span><span class="label label-info">AR</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">We present a novel Augmented Reality (AR) approach, through Microsoft HoloLens, to address the challenging problems of diagnosing, teaching, and patching interpretable knowledge of a robot. A Temporal And-Or graph (T-AOG) of opening bottles is learned from human demonstration and programmed to the robot. This representation yields a hierarchical structure that captures the compositional nature of the given task, which is highly interpretable for the users. By visualizing the knowledge structure represented by the T-AOG and the decision making process by parsing a T-AOG, the user can intuitively understand what the robot knows, supervise the robot's action planner, and monitor visually latent robot states (e.g., the force exerted during interactions). Given a new task, through such comprehensive visualizations of robot's inner functioning, users can quickly identify the reasons of failures, interactively teach the robot with a new action, and patch it to the knowledge structure represented by the T-AOG. In this way, the robot is capable of solving similar but new tasks only through minor modifications provided by the users interactively. This process demonstrates the interpretability of our knowledge representation and the effectiveness of the AR interface.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="item mix cpaper robot" data-year="2018.05">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                <img src="teaser/gloveaction_icra18.webp" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">Unsupervised Learning using Hierarchical Models for Hand-Object Interactions</h4>
+                                                                <div class="pubauthor">
+                                                                    <a href="https://xuxie1031.github.io/">Xu Xie</a>*,
+                                                                    <strong>Hangxin Liu</strong>*,
+                                                                    <a href="http://www.mjedmonds.com/">Mark Edmonds</a>,
+                                                                    <a href="https://fen9.github.io">Feng Gao</a>,
+                                                                    <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+                                                                    <a href="https://www.yzhu.io">Yixin Zhu</a>,
+                                                                    <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+                                                                    <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+                                                                    <br />
+                                                                    * equal contributors</div>
+                                                                <div class="pubcite">IEEE International Conference on Robotics and Automation (ICRA), 2018</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">Contact forces of the hand are visually unobservable, but play a crucial role in understanding hand-object interactions. In this paper, we propose an unsupervised learning approach for manipulation event segmentation and manipulation event parsing. The proposed framework incorporates hand pose kinematics and contact forces using a low-cost easy-to-replicate tactile glove. We use a temporal grammar model to capture the hierarchical structure of events, integrating extracted force vectors from the raw sensory input of poses and forces. The temporal grammar is represented as a temporal And-Or graph (T-AOG), which can be induced in an unsupervised manner. We obtain the event labeling sequences by measuring the similarity between segments using the Dynamic Time Alignment Kernel (DTAK). Experimental results show that our method achieves high accuracy in manipulation event segmentation, recognition and parsing by utilizing both pose and force data.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="item mix cpaper robot sense" data-year="2017.09">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                    <img src="teaser/glove_iros17.gif" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">A Glove-based System for Studying Hand-Object Manipulation via Joint Pose and Force Sensing</h4>
+                                                                <div class="pubauthor">                                                            
+                                                                    <strong>Hangxin Liu</strong>*,
+                                                                    <a href="https://xuxie1031.github.io/">Xu Xie</a>*,
+                                                                    <a href="#">Matt Millar</a>*,
+                                                                    <a href="http://www.mjedmonds.com/">Mark Edmonds</a>,
+                                                                    <a href="https://fen9.github.io">Feng Gao</a>,
+                                                                    <a href="https://www.yzhu.io">Yixin Zhu</a>,
+                                                                    <a href="http://www.mae.ucla.edu/veronica-santos/">Veronica Santos</a>,
+                                                                    <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+                                                                    <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+                                                                    <br />
+                                                                    * equal contributors</div>
+                                                                <div class="pubcite">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span><span class="label label-success">Sensing</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">We present a design of an easy-to-replicate glove-based system that can reliably perform simultaneous hand pose and force sensing in real time, for the purpose of collecting human hand data during fine manipulative actions. The design consists of a sensory glove that is capable of jointly collecting data of finger poses, hand poses, as well as forces on palm and each phalanx. Specifically, the sensory glove employs a network of 15 IMUs to measure the rotations between individual phalanxes. Hand pose is then reconstructed using forward kinematics. Contact forces on the palm and each phalanx are measured by 6 customized force sensors made from Velostat, a piezoresistive material whose force-voltage relation is investigated. We further develop an open-source software pipeline consisting of drivers and processing code and a system for visualizing hand actions that is compatible with the popular Raspberry Pi architecture. In our experiment, we conduct a series of evaluations that quantitatively characterize both individual sensors and the overall system, proving the effectiveness of the proposed design.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="item mix cpaper robot" data-year="2017.09">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                    <img src="teaser/open_bottle_iros17.gif" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">Feeling the Force: Integrating Force and Pose for Fluent Discovery through Imitation Learning to Open Medicine Bottles</h4>
+                                                                <div class="pubauthor">  
+                                                                    <a href="http://www.mjedmonds.com/">Mark Edmonds</a>*,
+                                                                    <a href="https://fen9.github.io">Feng Gao</a>*,
+                                                                    <a href="https://xuxie1031.github.io/">Xu Xie</a>*,
+                                                                    <strong>Hangxin Liu</strong>*,
+                                                                    <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+                                                                    <a href="https://www.yzhu.io">Yixin Zhu</a>,
+                                                                    <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+                                                                    <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+                                                                    <br />
+                                                                    * equal contributors</div>
+                                                                <div class="pubcite">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2017</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span></div>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">Learning complex robot manipulation policies for real-world objects is challenging, often requiring significant tuning within controlled environments. In this paper, we learn a manipulation model to execute tasks with multiple stages and variable structure, which typically are not suitable for most robot manipulation approaches. The model is learned from human demonstration using a tactile glove that measures both hand pose and contact forces. The tactile glove enables observation of visually latent changes in the scene, specifically the forces imposed to unlock the child-safety mechanisms of medicine bottles. From these observations, we learn an action planner through both a top-down stochastic grammar model (And-Or graph) to represent the compositional nature of the task sequence and a bottom-up discriminative model from the observed poses and forces. These two terms are combined during planning to select the next optimal action. We present a method for transferring this human-specific knowledge onto a robot platform and demonstrate that the robot can perform successful manipulations of unseen objects with similar task structure.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item mix jpaper sense" data-year="2017.04">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Reliable Infrastructural Urban Traffic Monitoring Via Lidar and Camera Fusion</h4>
+                                                        <div class="pubauthor">Yi Tian, <strong>Hangxin Liu</strong>, Tomonari Furukawa</div>
+                                                        <div class="pubcite">SAE International Journal of Passenger Cars-Electronic and Electrical Systems, 2017</div>
+                                                        <div class="pubcite"><span class="label label-warning">Journal Paper</span><span class="label label-success">Sensing</span></div>                                                        
+                                                    </div>
+                                                    
+                                                        <div class="pubdetails">
+                                                            <h4>Abstract</h4>
+                                                            <p>This paper presents a novel infrastructural traffc monitoring approach that estimates traffc information by combining two sensing techniques. The traffc information can be obtained from the presented approach includes passing vehicle counts, corresponding speed estimation and vehicle classifcation based on size. This approach uses measurement from an array of Lidars and video frames from a camera and derives traffc information using two techniques. The frst technique detects passing vehicles by using Lidars to constantly measure the distance from laser transmitter to the target road surface. When a vehicle or other objects pass by, the measurement of the distance to road surface reduces in each targeting spot, and triggers detection event. The second technique utilizes video frames from camera and performs background subtraction algorithm in each selected Region of Interest (ROI), which also triggers detection when vehicle travels through each ROI. Based on detection events, vehicle location is estimated respectively. The fnal location estimation is derived by fusing the two estimation in the framework of Recursive Bayesian Estimation (RBE). Vehicle counts, speed estimation and classifcation are then performed using the vehicle location estimation in each time step. The approach achieves high reliability by combing the strength of both sensors. A sensor prototype has been built and multiple feld experiments have been completed. High reliability is demonstrated in experiment by achieving more than 95% accuracy both in vehicle counting and classifcation.</p>
+                                                        </div>
+                                                   
+                                                </div>
+
+
+                                                <div class="item mix cpaper robot sense" data-year="2016.10">
+                                                    <div class="pubmain">
+                                                        <div class="row">
+                                                            <div class="pubassets">
+                                                                
+                                                                <a href="#" class="pubcollapse">
+                                                                    <i class="fa fa-expand"></i>
+                                                                </a>
+                                                                <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                    <i class="fa fa-external-link"></i>
+                                                                </a>
+                                                                <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                    <i class="fa fa-cloud-download"></i>
+                                                                </a>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3" align="center">
+                                                                <img src="teaser/nfov_iros16.gif" class="thumbnail img-responsive" style="max-height:200px;"/>
+                                                            </div>
+                                                            <div class="col-md-9" >
+                                                                <h4 class="pubtitle">Non-Field-Of-View Sound Source Localization Using Diffraction and Reflection Signals</h4>
+                                                                <div class="pubauthor">  
+                                                                    <a href="#">Kuya Takami</a>,
+                                                                    <strong>Hangxin Liu</strong>,
+                                                                    <a href="#">Tomonari Furukawa</a>,
+                                                                    <a href="#">Makoto Kumon</a>,
+                                                                    <a href="#">Gamini Dissanayake</a>,
+                                                                </div>
+                                                                <div class="pubcite">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2016</div>
+                                                                <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span><span class="label label-success">Sensing</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">This paper describes a non-field-of-view (NFOV) localization approach for a mobile robot in an unknown environment based on an acoustic signal combined with the geometrical information from an optical sensor. The approach estimates the location of a target through the mobile robot’s sensor observation frame, which consists of a combination of diffraction and reflection acoustic signals and a 3-D environment geometrical description. This fusion of audio-visual sensor observation likelihoods allows the robot to estimate the NFOV target. The diffraction and reflection observations from the microphone array generate the acoustic joint observation likelihood. The observed geometry also determines far-field or near-field acoustic conditions to improve the estimation of the sound direction of arrival. A mobile robot equipped with a microphone array and an RGB-D sensor was tested in a controlled environment, an anechoic chamber, to demonstrate the NFOV localization capabilities. This resulted in +/- 18 degrees, and less than 0.75 m error in angle and distance estimation, respectively.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="item mix cpaper sense" data-year="2016.08">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Design of Highly Reliable Infrastructural Traffic Monitoring Using Laser and Vision Sensors</h4>
+                                                        <div class="pubauthor">  
+                                                            <strong>Hangxin Liu</strong>,
+                                                            <a href="#">Yi Tian</a>,
+                                                            <a href="#">Tomonari Furukawa</a>,
+                                                        </div>
+                                                        <div class="pubcite">ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (ASME IDETC), 2016</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-success">Sensing</span></div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">This paper presents a novel design of infrastructural traffic monitoring that performs vehicle counts, speed estimation, and vehicles classification by deploying three different approaches using two types of sensor, infrared (IR) cameras and laser range finders (LRFs). The first approach identifies passing vehicles by using LRFs and measuring the time-of-flight to the ground, which changes when vehicles pass. In the second approach, LRFs are used only to project a dotted line onto ground, and an IR camera identifies passing vehicles by recognizing the change of location of these laser dots in its images. The third approach utilizes an IR camera only and recognizes passing vehicles in each frame using background subtraction and edge detection algorithms. The design achieves high reliability because each approach has different strengths. A prototype system has been built and the field tests at a public road show promising results by achieving high reliability by having 95% accuracy in traffic counting and speed estimation.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item mix cpaper robot sense" data-year="2016.07">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">Recursive Bayesian estimation of NFOV target using diffraction and reflection signals</h4>
+                                                        <div class="pubauthor">  
+                                                            <a href="#">Kuya Takami</a>,
+                                                            <strong>Hangxin Liu</strong>,
+                                                            <a href="#">Makoto Kumon</a>,
+                                                            <a href="#">Tomonari Furukawa</a>,
+                                                            <a href="#">Gamini Dissanayake</a>,
+                                                        </div>
+                                                        <div class="pubcite">ISIF International Conference on Information Fusion (FUSION), 2016</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Papers</span><span class="label label-primary">Robotics</span><span class="label label-success">Sensing</span></div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p style="text-align:justify;">This paper presents an approach to the recursive Bayesian estimation of non-field-of-view (NFOV) sound source tracking based on reflection and diffraction signals with an incorporation of optical sensors. The approach takes multi-modal sensoy fusion of a mobile robot, which combines an optical 3D environment geometrical description with a microphone array acoustic signal to estimate the target location. The robot estimates target location either in the field-of-view (FOV) or in the NFOV by fusion of sensor observation likelihoods. For the NFOV case, the microphone array provides reflection and diffraction observations to generate a joint acoustic observation likelihood. With the data fusion between the 3D description and the acoustic observation, the target estimation is performed in an unknown environment. Finally, the sensor observation combined with the motion model of the target iteratively performs tracking within a recursive Bayesian estimation framework. The proposed approach was tested with a microphone array with an RGBD sensor in a controlled anechoic chamber to demonstrate the NFOV tracking capabilities for a moving target.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
+
