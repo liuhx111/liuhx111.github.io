@@ -1,408 +1,755 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Hangxin Liu - UCLA</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="author" content="owwwlab.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        
-        <meta name="description" content="A theme for faculty profile page" />
-        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <link rel="shortcut icon" href="../favicon.ico">
+  <title>Hangxin Liu</title>
+  
+  <meta name="author" content="Hangxin Liu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
 
-        <!--CSS styles-->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">  
-        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Hangxin Liu</name>
+              </p>
+              <p style="text-align:justify;">I am a research scientist and team lead in robotics at <a href="https://www.bigai.ai/">Beijing Institute for General Artificial Intelligence</a>. In robotics lab, my collesgues and I hypothesize that there exists some foundamental representation or cognitive architecturs underpinning the intellectual behaviors of humans. By uncovering and reproducing such an architecture, we hope to enable long-term human-robot shared autonomy by bridging
+              </p>
+              <ul>
+                <li><strong>Perception</strong> (how to extract and organize more expressive symbols from dense sensory signals);
+                <li><strong>Reasoning</strong> (how to utilze thoes abstract information for higher-level skills, which in turn faciliates perception);
+                <li><strong>Task and Motion Planning</strong> (how to effectively act and react).
+              </ul>
+              <p style="text-align:justify;"> I received a Ph.D. in Computer Science and a M.S. in Mechanical Engineering from UCLA, working in the <a href="http://vcla.stat.ucla.edu/" target="_blank">Center for Vision, Cognition, Learning, and Autonomy</a> with <a href="http://www.stat.ucla.edu/~sczhu/" target="_blank">Professor Song-Chun Zhu</a>. My work at UCLA was supported by DARPA SIMPLEX, DARPA XAI, ONR MURI, and ONR Cognitive Robot.</p>
+                                        
+              <p style="text-align:justify;">Before joining VCLA, I graduated with a B.S. in Mechanical Engineering and a B.S. in Computer Science with a Mathematics minor from Virginia Polytechnic Institute and State University (Virginia Tech) in 2016. At Virginia Tech, advised by Professor Tomonari Furukawa with generous support from Murata Electronics North America, Inc and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1554961" target="_blank">NSF-EAGER-1554961</a>
+              </p>
+              <p style="text-align:center">
+                <!-- <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp/&nbsp -->
+                <a href="data/cv.pdf">CV</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=1D5tDu0AAAAJ&hl=en&oi=ao">Google Scholar</a>
+                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
+                <!-- <a href="https://github.com/jonbarron/">Github</a> -->
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/hx_liu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/hx_liu.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in robot perception, planning, learning, and human-robot interaction in virtual and augmented reality. 
+                <!-- Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images.  -->
+                Representative papers are <span class="highlight">highlighted</span>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        
-        <!--/CSS styles-->
-        <!--Javascript files-->
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/TweenMax.min.js"></script>
-        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-        
-        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
-        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
 
-        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/22_duo.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Object Gathering with a Tethered Robot Duo</papertitle>
+              </a>
+              <br>
+              <a href="https://yaosu.info/">Yao Su</a>,
+              <a>Yuhong Jiang</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <strong>Hangxin Liu</strong>,
+              <br>
+              <em>IEEE Robotics and Automation Letters (RA-L+ICRA)</em>, 2022
+              <br>
+              <a href="data/paper/RAL22_Tethered_Duo.pdf">Paper</a> / 
+              <a href="https://player.vimeo.com/video/662175853?color=ff9933&byline=0&portrait=0">Video</a> /
+              <a href="https://yaosu.info/papers/2021-ral-tetherduo/index.html">Project Page</a>
+              <p></p>
+              <p>
+              A cooperative planning framework to generate optimal trajectories for a robot duo tethered by a flexible net to gather scattered objects spread in a large area. Implemented Model Reference Adaptive Control (MRAC) to handle unknown dynamics of carried payloads.
+              </p>
+            </td>
+          </tr>
 
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/21_aail_ar.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Patching Interpretable And-Or-Graph Knowledge Representation using Augmented Reality</papertitle>
+              </a>
+              <br>
+              <strong>Hangxin Liu</strong>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/index.html">Song-Chun Zhu</a>
+              <br>
+              <em>Applied AI Letters</em>, 2021 &nbsp <font color="red"><strong>(DARPA XAI Speical Issue)</strong></font>
+              <br>
+              <a href="https://onlinelibrary.wiley.com/doi/10.1002/ail2.43">Paper</a>
+              <p></p>
+              <p>
+              Given an interpretabe And-Or-Graph knowledge representation, the proposed AR interface allows users to intuitively understand and supervise robot's behaviors, and interactively teach the robot with new actions.
+              </p>
+            </td>
+          </tr>
 
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <video width=100% height=100% muted autoplay loop>
+                <source src="images/21_vkc_motion_iros.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Consolidating Kinematic Models to Promote Coordinated Mobile Manipulations</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/g.ucla.edu/zyjiao">Ziyuan Jiao</a>*,
+              <a href="https://tooschoolforcool.github.io/">Zeyu Zhang</a>*,
+              <a href="">Xin Jiang</a>,
+              <a href="https://drexel.edu/engineering/about/faculty-staff/H/han-david/">David Han</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <strong>Hangxin Liu</strong>
+              <br>* equal contributors
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+              <br>
+              <a href="https://arxiv.org/abs/2108.01264">Paper</a> /
+              <a href="https://vimeo.com/581565256">Video</a> /
+              <a href="https://github.com/zyjiao4728/Planning-on-VKC">Code</a>
+              <p></p>
+              <p>Constructing a Virtual Kinematic Chain (VKC) that readily consolidates the kinematics of the mobile base, the arm, and the object to be manipulated in mobile manipulations.</p>
+            </td>
+          </tr> 
 
-        <script type="text/javascript" src="js/masonry.min.js"></script>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/21_vkc_task_iros.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Efficient Task Planning for Mobile Manipulation: a Virtual Kinematic Chain Perspective</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/g.ucla.edu/zyjiao">Ziyuan Jiao</a>*,
+              <a href="https://tooschoolforcool.github.io/">Zeyu Zhang</a>*,
+              <a href="">Weiqi Wang</a>,
+              <a href="https://drexel.edu/engineering/about/faculty-staff/H/han-david/">David Han</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <strong>Hangxin Liu</strong>
+              <br>* equal contributors
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2021
+              <br>
+              <a href="data/paper/IROS21_VKC_Task.pdf">Paper</a> /
+              <a href="https://vimeo.com/581563536">Video</a> /
+              <a href="https://github.com/TooSchoolForCool/IROS21-VKC-Task-PDDL">Code</a>
+              <p></p>
+              <p>The VKC perspective is a simple yet effective method to improve task planning efficacy for mobile manipulation.</p>
+            </td>
+          </tr> 
 
-        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/21_scene_icra.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Reconstructing Interactive 3D Scenes by Panoptic Mapping and CAD Model Alignments</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/view/muzhihan/home">Muzhi Han</a>*,
+              <a href="https://tooschoolforcool.github.io/">Zeyu Zhang</a>*,
+              <a href="https://sites.google.com/g.ucla.edu/zyjiao">Ziyuan Jiao</a>,
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>,
+              <strong>Hangxin Liu</strong>
+              <br>* equal contributors
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2021
+              <br>
+              <a href="data/paper/ICRA21_scene.pdf">Paper</a> /
+              <a href="https://vimeo.com/530222887">Video</a> /
+              <a href="https://github.com/hmz-15/Interactive-Scene-Reconstruction">Code</a>
+              <p></p>
+              <p>Reconstructing an interactive scene fom RGB-D data stream by panoptic mapping and orgnizing object affordance and contextual relations by a graph-based scene representatio.</p>
+            </td>
+          </tr> 
+      
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/20_workspace_iros.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Human-Robot Interaction in a Shared Augmented Reality Workspace</papertitle>
+              </a>
+              <br>
+              <a href="https://janetalready.github.io/">Shuwen Qiu</a>*,
+              <strong>Hangxin Liu</strong>*,
+              <a href="https://tooschoolforcool.github.io/">Zeyu Zhang</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>* equal contributors
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2020
+              <br>
+              <a href="data/paper/IROS20_Workspace.pdf">Paper</a> /
+              <a href="https://vimeo.com/439150333">Video</a> /
+              <a href="https://github.com/Janetalready/Shared-AR-workspace">Code</a> /
+              <a href="https://vimeo.com/451048919">Presentation</a>
+              <p></p>
+              <p>Physical robots can control and alter virtual objects in AR as an active agent and proactively interact with human agents, instead of purely passively executing received commands.</p>
+            </td>
+          </tr> 
 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/20_walkingbot_roman.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>WalkingBot: Modular Interactive Legged Robot with Automated Structure Sensing and Motion Planning</papertitle>
+              </a>
+              <br>
+              <a href="https://meng-wang.jimdofree.com/">Meng Wang</a>,
+              <a href="">Yao Su</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="">Yingqing Xu</a>
+              <br>
+              <em>IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2020
+              <br>
+              <a href="data/paper/ROMAN20_Walkingbot.pdf">Paper</a>
+              <p></p>
+              <p>A modular robot system that allows non-expert users to build a multi-legged robot in various morphologies using a set of building blocks with sensors and actuators embedded.</p>
+            </td>
+          </tr> 
 
-        <script type="text/javascript" src="js/magnific-popup.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/20_tom_icra.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Joint Inference of States, Robot Knowledge, and Human (False-)Beliefs</papertitle>
+              </a>
+              <br>
+              <a href="">Tao Yuan</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="https://lifengfan.github.io/">Lifeng Fan</a>, 
+              <a href="http://web.cs.ucla.edu/~zilongzheng/">Zilong Zheng</a>, 
+              <a href="http://www.stat.ucla.edu/~taogao/">Tao Gao</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+              <br>
+              <a href="data/paper/ICRA20_ToM.pdf">Paper</a> /
+              <a href="https://vimeo.com/391734593">Video</a> /
+              <a href="https://vimeo.com/420949549">Presentation</a>
+              <p></p>
+              <p>A graphical model to unify the representation of object states, robot knowledge, and human (false-)beliefs.</p>
+            </td>
+          </tr> 
 
-        <!--/Javascript files-->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/20_evacuation.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Congestion-aware Evacuation Routing using Augmented Reality Devices</papertitle>
+              </a>
+              <br>
+              <a>Zeyu Zhang</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="https://sites.google.com/g.ucla.edu/zyjiao">Ziyuan Jiao</a>,
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2020
+              <br>
+              <a href="data/paper/ICRA20_Evacuation.pdf">Paper</a> /
+              <a href="https://vimeo.com/391765127">Video</a> /
+              <a href="https://github.com/TooSchoolForCool/AR-Evacuation-ICRA">Code</a> /
+              <a href="https://vimeo.com/420833403">Presentation</a>
+              <p></p>
+              <p>
+              An AR-based indoor evacuation system with a congestion-aware routing solution. 
+              </p>
+            </td>
+          </tr>
 
-    </head>
-    <body>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/20_dark.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Dark, Beyond Deep: A Paradigm Shift to Cognitive AI with Human-like Commonsense</papertitle>
+              </a>
+              <br>
+              <a href="https://yzhu.io/">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~taogao/">Tao Gao</a>,
+              <a href="https://lifengfan.github.io/">Lifeng Fan</a>,
+              <a href="https://siyuanhuang.com/">Siyuan Huang</a>,
+              <a href="http://www.mjedmonds.com/">Mark Edmonds</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="https://fen9.github.io/">Feng Gao</a>,
+              <a href="http://wellyzhang.github.io/">Chi Zhang</a>, 
+              <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+              <a href="">Ying Nian Wu</a>,
+              <a href="https://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,   
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>
+              <em>Engineering</em>, 2020
+              <br>
+              <a href="https://www.sciencedirect.com/science/article/pii/S2095809920300345">Paper</a>
+              <p></p>
+              <p>
+              A comprehensive review on cognitive AI and visual commonsense (Functionality, Physics, Intension, Causality).  
+              </p>
+            </td>
+          </tr>
 
-        <div id="wrapper">
-            <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/19_scirob.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>A tale of two explanations: Enhancing human trust by explaining robot behavior</papertitle>
+              </a>
+              <br>
+              <a href="http://www.mjedmonds.com/">Mark Edmonds</a>*,
+              <a href="https://fen9.github.io">Feng Gao</a>*,
+              <strong>Hangxin Liu*</strong>,
+              <a href="https://xuxie1031.github.io/">Xu Xie*</a>,
+              <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+              <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="">Ying Nian Wu</a>,
+              <a href="http://cvl.psych.ucla.edu/">Hongjing Lu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>* equal contributors
+              <br>
+              <em>Science Robotics</em>, 2019
+              <br>
+              <a href="https://www.science.org/doi/10.1126/scirobotics.aay4663">Paper</a>
+              <p></p>
+              <p>
+              Learning multi-modal knowledge representation and fostering human trusts by producing explanations. 
+              </p>
+            </td>
+          </tr>
 
-            <div id="sidebar">
-                <div id="sidebar-wrapper">
-                    <div id="sidebar-inner">
-                        <!-- Profile/logo section-->
-                        <div id="profile" class="clearfix">
-                            <div class="portrate hidden-xs"></div>
-                            <div class="title">
-                                <h2>Hangxin Liu</h2>
-                                <h3>UCLA</h3>
-                            </div>   
-                        </div>
-                        <!-- /Profile/logo section-->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/19_vrgym.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>VRGym: A Virtual Testbed for Physical and Interactive AI</papertitle>
+              </a>
+              <br>
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>, 
+              <strong>Hangxin Liu</strong>,
+              <a href="http://www.zlz.link/">Zhenliang Zhang</a>, 
+              <a href="https://yuxingqiu.github.io/">Yuxing Qiu</a>, 
+              <a href="https://fen9.github.io/">Feng Gao</a>, 
+              <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>, 
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>
+              <em>ACM Turing Celebration Conference - China (ACM TURC)</em>, 2019
+              <br>
+              <a href="data/paper/TURC19_VRGym.pdf">Paper</a> / 
+              <a href="https://vimeo.com/327629749">Video</a> /
+              <a href="https://gitlab.com/vcla/vrgym">Code</a>
+              <p></p>
+              <p>
+              A testbed with fine-grained physical effects and realistic human-robot interactions for training embodied agents. 
+              </p>
+            </td>
+          </tr>
 
-                        <!-- Main navigation-->
-                        <div id="main-nav">
-                            <ul id="navigation">
-                                <li class="currentmenu">
-                                  <a href="index.html">
-                                    <i class="fa fa-user"></i>
-                                    <div class="text">About Me</div>
-                                  </a>
-                                </li>  
-                                
-                                <!-- <li>
-                                  <a href="research.html">
-                                    <i class="fa fa-book"></i>
-                                    <div class="text">Research</div>
-                                  </a>
-                                </li>  -->
-                                
-                                <li>
-                                  <a href="publication.html">
-                                    <i class="fa fa-edit"></i>
-                                    <div class="text">Publications</div>
-                                  </a>
-                                </li> 
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/19_ssl.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Self-Supervised Incremental Learning for Sound Source Localization in Complex Indoor Environment</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>*,
+              <a>Zeyu Zhang</a>*, 
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>* equal contributors
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2019
+              <br>
+              <a href="data/paper/ICRA19_SSL.pdf">Paper</a> / 
+              <a href="https://vimeo.com/321150838">Video</a> /
+              <a href="https://github.com/TooSchoolForCool/EddieBot-ROS">Code</a>
+              <p></p>
+              <p>
+              Robot 'labels' received data by its own exploration and refines its predictive model on-the-fly. 
+              </p>
+            </td>
+          </tr>
 
-                                <li>
-                                  <a href="projects.html">
-                                    <i class="fa fa-clock-o"></i>
-                                    <div class="text">Projects</div>
-                                  </a>
-                                </li>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">.
+                <img src='images/19_vrglove.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>High-Fidelity Grasping in Virtual Reality using a Glove-based System</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>*,
+              <a href="http://www.zlz.link/">Zhenliang Zhang</a>*,
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>, 
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="#">Yue Liu</a>,
+              <a href="#">Yongtian Wang</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>* equal contributors
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2019
+              <br>
+              <a href="data/paper/ICRA19_VRGlove.pdf">Paper</a> / 
+              <a href="https://vimeo.com/317890470">Video</a> /
+              <a href="https://github.com/zzlyw/ICRA19_VRGloveSystem">Code</a>
+              <p></p>
+              <p>
+              A data glove for natural human grasping activities in VR and for cost-effective grasping data collections. 
+              </p>
+            </td>
+          </tr>
 
-                                <li>
-                                  <a href="gallery.html">
-                                    <i class="fa fa-picture-o"></i>
-                                    <div class="text">Demo</div>
-                                  </a>
-                                </li>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/19_mirror.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Mirroring without Overimitation: Learning Functionally Equivalent Manipulation Actions</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>,
+              <a href="http://wellyzhang.github.io/">Chi Zhang</a>, 
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="https://www.seas.upenn.edu/~cffjiang/">Chenfanfu Jiang</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>
+              <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2019
+              <br>
+              <a href="data/paper/AAAI19_Mirroring.pdf">Paper</a>
+              <p></p>
+              <p>
+              Learning functionally equivalent actions that produce similar effects instead of learning trajectory cues. 
+              </p>
+            </td>
+          </tr>
 
-                                <!-- <li>
-                                  <a href="contact.html">
-                                      <i class="fa fa-calendar"></i>
-                                      <div class="text">Contact Me</div>
-                                  </a>
-                                </li> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/18_patching.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Interactive Robot Knowledge Patching using Augmented Reality</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>*,
+              <a href="#">Yaofang Zhang</a>*,
+              <a href="#">Wenwen Si</a>,
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>,  
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>
+              <br>* equal contributors
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2018
+              <br>
+              <a href="data/paper/icra18_arpatching.pdf">Paper</a> / 
+              <a href="https://vimeo.com/256261673">Video</a> /
+              <a href="https://github.com/xiaozhuchacha/AOG_AR">Code</a>
+              <p></p>
+              <p>
+              An AR system for users to diagnose robor's problems, correct wrong behaviors, and add the corrections to the robot's knowledge. 
+              </p>
+            </td>
+          </tr>
 
-                                <li class="external">
-                                  <a href="cv.pdf">
-                                      <i class="fa fa-download"></i>
-                                      <div class="text">Download CV</div>
-                                  </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /Main navigation-->
-                        <!-- Sidebar footer -->
-                        <div id="sidebar-footer">
-                            <div class="social-icons">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/18_gloveaction.webp' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Unsupervised Learning using Hierarchical Models for Hand-Object Interactions</papertitle>
+              </a>
+              <br> 
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>*,
+              <strong>Hangxin Liu</strong>*,
+              <a href="http://www.mjedmonds.com/">Mark Edmonds</a>,
+              <a href="https://fen9.github.io">Feng Gao</a>,
+              <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+              <br>* equal contributors
+              <br>
+              <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2018
+              <br>
+              <a href="data/paper/icra18_gloveaction.pdf">Paper</a> / 
+              <a href="https://vimeo.com/259416784">Video</a> /
+              <a href="https://github.com/xuxie1031/UnsupervisedGloveAction">Code</a>
+              <p></p>
+              <p>
+              An unsupervised learning approach for manipulation event segmentation and parsing using hand gestures and forces data.
+              </p>
+            </td>
+          </tr>
 
-        
-                            <div id="copyright">Copyright text here</div>
-                    
-                        </div>
-                        <!-- /Sidebar footer -->
-                    </div>
+          <tr bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/17_glove.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>A Glove-based System for Studying Hand-Object Manipulation via Joint Pose and Force Sensing</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>*,
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>*,
+              <a href="#">Matt Millar</a>*,
+              <a href="http://www.mjedmonds.com/">Mark Edmonds</a>,
+              <a href="https://fen9.github.io">Feng Gao</a>,
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="http://www.mae.ucla.edu/veronica-santos/">Veronica Santos</a>,
+              <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+              <br>* equal contributors
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2017
+              <br>
+              <a href="data/paper/iros17_glove.pdf">Paper</a> / 
+              <a href="https://github.com/xiaozhuchacha/VCLATactileGlove">Code</a>
+              <p></p>
+              <p>
+              A easy-to-replicate glove-based system for real time collections of hand pose and force during fine manipulative actions.
+              </p>
+            </td>
+          </tr>
 
-                </div>
-            </div>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/17_open_bottle.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Feeling the Force: Integrating Force and Pose for Fluent Discovery through Imitation Learning to Open Medicine Bottles</papertitle>
+              </a>
+              <br> 
+              <a href="http://www.mjedmonds.com/">Mark Edmonds</a>*,
+              <a href="https://fen9.github.io">Feng Gao</a>*,
+              <a href="https://xuxie1031.github.io/">Xu Xie</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="http://web.cs.ucla.edu/~syqi/">Siyuan Qi</a>,
+              <a href="https://www.yzhu.io">Yixin Zhu</a>,
+              <a href="https://www-robotics.jpl.nasa.gov/people/Brandon_Rothrock">Brandon Rothrock</a>,
+              <a href="http://www.stat.ucla.edu/~sczhu/">Song-Chun Zhu</a>.
+              <br>* equal contributors
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2017
+              <br>
+              <a href="data/paper/iros17_openbottle.pdf">Paper</a> / 
+              <a href="https://vimeo.com/227504384">Video</a> /
+              <a href="https://github.com/xiaozhuchacha/OpenBottle">Code</a>
+              <p></p>
+              <p>
+              Learning an action planner through both a top-down stochastic grammar model (And-Or graph) and a bottom-up discriminative model from the observed poses and forces 
+              </p>
+            </td>
+          </tr>
 
-            <div id="main">
-            
-                <div id="biography" class="page home" data-pos="home">
-                    <div class="pageheader">
-                        <div class="headercontent">
-                            <div class="section-container">
-                                
-                                <div class="row">
-                                    <div class="clearfix visible-sm visible-xs"></div>
-                                    <div class="col-sm-6 col-sm-offset-6 col-md-6 col-md-offset-6">
-                                        <h3 class="title"><font color="black">Hangxin Liu</font></h3>
-                                        <font color="black"><p style="text-align:justify;">I am a Ph.D student in Computer Science at UCLA, working in the <a href="http://vcla.stat.ucla.edu/" target="_blank">Center for Vision, Cognition, Learning, and Autonomy</a> with <a href="http://www.stat.ucla.edu/~sczhu/" target="_blank">Professor Song-Chun Zhu</a>. I also recevied a M.S. in Mechanical Engineering from UCLA. My research interests lie on Robotics and Computer Vision, and I am supported by DARPA XAI grant N66001-17-2-4029.</p>
-                                        <p style="text-align:justify;">Before joining VCLA, I graduated with a B.S. in Mechanical Engineering and a B.S. in Computer Science with a Mathematics minor from Virginia Polytechnic Institute and State University (Virginia Tech) in 2016. At Virginia Tech, I was a research assistant in Computational Multiphysics Systems (CMS) Laboratory with Professor Tomonari Furukawa. My works at CMS were supported by Murata Electronics North America, Inc and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1554961" target="_blank">NSF-EAGER-1554961</a></p></font>
-                                    </div>  
-                                </div>
-                            </div>        
-                        </div>
-                    </div>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/16_traf_sensor.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Reliable Infrastructural Urban Traffic Monitoring Via Lidar and Camera Fusion</papertitle>
+              </a>
+              <br> 
+              <a href="#">Ti Tian</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="#">Tomonari Furukawa</a>.
+              <br>
+              <em>SAE International Journal of Passenger Cars-Electronic and Electrical Systems</em>, 2017
+              <br>
+              <a href="https://go.gale.com/ps/i.do?id=GALE%7CA528961291&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=19464614&p=AONE&sw=w&userGroupName=anon%7E3321c0d1">Paper</a>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>
 
-                    <div class="pagecontents">
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/16_nfov_iros.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Non-Field-Of-View Sound Source Localization Using Diffraction and Reflection Signals</papertitle>
+              </a>
+              <br> 
+              <a href="#">Kuya Takami</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="#">Tomonari Furukawa</a>,
+              <a href="#">Makoto Kumon</a>,
+              <a href="#">Gamini Dissanayake</a>.
+              <br>
+              <em><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2016
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/7759049">Paper</a>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>
 
-                    	<div class="section color-2">
-                            <div class="section-container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="title text-center">
-                                            <h3>News</h3>
-                                        </div>
-                                        <ul class="timeline">
-                                            <li class="open">
-                                                <div class="date">2021-06</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Two papers have been accepted by IROS 2021.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2021-02</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">One paper has been accepted by ICRA 2021.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2020-06</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">One paper has been accepted by IROS 2020 and one by RO-MAN 2020.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2020-01</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Two papers have been accepted by ICRA 2020.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2019-12</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">One journal paper has been accepted by Science Robotics.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2019-03</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">One paper has been accepted by ACM-TURC 2019.</div>
-                                                </div>
-                                            </li>
-                                            <li class="open">
-                                                <div class="date">2019-01</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Two papers have been accepted by ICRA 2019.</div>
-                                                </div>
-                                            </li>
-                                            
-                                            <li class="open">
-                                                <div class="date">2018-11</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">One paper has been accepted by AAAI 2019.</div>
-                                                </div>
-                                            </li>
-                                            <!-- <li class="open">
-                                                <div class="date">2018-04</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">I started my PhD in Computer Science at UCLA.</div>
-                                                </div>
-                                            </li>
- -->
- 											<li class="open">
-                                                <div class="date">2018-01</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Two papers have been accepted by ICRA 2018.</div>
-                                                </div>
-                                            </li>
-                                             <li class="open">
-                                                <div class="date">2017-06</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Two papers have been accepted by IROS 2017.</div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/16_traf_result.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Design of Highly Reliable Infrastructural Traffic Monitoring Using Laser and Vision Sensors</papertitle>
+              </a>
+              <br> 
+              <strong>Hangxin Liu</strong>,
+              <a href="#">Ti Tian</a>,
+              <a href="#">Tomonari Furukawa</a>.
+              <br>* equal contributors
+              <br>
+              <em>ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (ASME IDETC)</em>, 2016
+              <br>
+              <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2016/V003T01A013/257048">Paper</a>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>
 
-                        <div class="section color-1">
-                            <div class="section-container">
-                                <div class="row">
-                                    <div class="col-md-5 col-md-offset-1">
-                                        <div class="title text-center">
-                                            <h3>Academic Positions</h3>
-                                        </div>
-                                        <ul class="ul-dates">
-                                            <li>
-                                                <div class="dates">
-                                                    <span>Present</span>
-                                                    <span>2016</span>
-                                                </div>
-                                                <div class="content">
-                                                    <h4>Graduate Student Researcher</h4>
-                                                    <p>Center for Vision, Cognition, Learning, and Autonomy, <em>UCLA</em></p>
-                                                </div>
-                                            </li>
-                                            <!-- <li>
-                                                <div class="dates">
-                                                    <span>Present</span>
-                                                    <span>2017</span>
-                                                </div>
-                                                <div class="content">
-                                                    <h4>Hardware Engineer Intern</h4>
-                                                    <p>DMAI, Inc</p>
-                                                </div>
-                                            </li> -->
-                                            <li>
-                                                <div class="dates">
-                                                    <span>2016</span>
-                                                    <span>2015</span>
-                                                </div>
-                                                <div class="content">
-                                                    <h4>Undergraduate/Graduate Research Assistent</h4>
-                                                    <p>Computational Multi-physics System Lab, <em>Virginia Tech</em></p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="title text-center">
-                                            <h3>Education</h3>
-                                        </div>
-                                        <ul class="ul-card">
-                                            <li>
-                                                <div class="dy">
-                                                    <span class="degree">Ph.D.</span>
-                                                    <span class="year">2021</span>
-                                                </div>
-                                                <div class="description">
-                                                    <p class="waht">Ph.D. in Computer Science</p>
-                                                    <p class="where">University of California, Los Angeles</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="dy">
-                                                    <span class="degree">M.S.</span><span class="year">2018</span>
-                                                </div>
-                                                <div class="description">
-                                                    <p class="waht">Master of Science in Mechanical Engineering</p>
-                                                    <p class="where">University of California, Los Angeles</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="dy">
-                                                    <span class="degree">B.S.</span><span class="year">2016</span>
-                                                </div>
-                                                <div class="description">
-                                                    <p class="waht">Bachelor of Science in Mechanical Engineering</p>
-                                                    <p class="waht">Bachelor of Science in Computer Science</p>
-                                                    <p class="where">Virginia Tech</p>
-                                                </div>
-                                            </li>
-                                            
-                                        </ul>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/16_nfov_rbe.gif' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-neural-pil/">
+                <papertitle>Recursive Bayesian Estimation of NFOV Target using Diffraction and Reflection Signals</papertitle>
+              </a>
+              <br> 
+              <a href="#">Kuya Takami</a>,
+              <strong>Hangxin Liu</strong>,
+              <a href="#">Tomonari Furukawa</a>,
+              <a href="#">Makoto Kumon</a>,
+              <a href="#">Gamini Dissanayake</a>.
+              <br>
+              <em>ISIF International Conference on Information Fusion (FUSION)</em>, 2016
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/7528118">Paper</a>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>
 
-                                    </div>    
-                                </div>    
-                            </div> 
-                        </div>
-<!-- 
-                        <div class="section fixedbg parallax">
-                            <div class="section-container">
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3">
-                                        <h2 class="heading">I always like to look on the optimistic side of life, but I am realistic enough to know that life is a complex matter.</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Design and source code from <a href="https://jonbarron.info/">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
 
-                        <div class="section color-2">
-                            <div class="section-container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <div class="title text-center">
-                                            <h3>Honors, Awards and Grants</h3>
-                                        </div>
-                                        <ul class="timeline">
+      </td>
+    </tr>
+  </table>
+</body>
 
-                                            <li class="open">
-                                                <div class="date">2019</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">ICRA 2019 Conference Travel Award</div>
-                                                </div>
-                                            </li>
-                                                    
-                                            <li class="open">
-                                                <div class="date">2018</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">ICRA 2018 Conference Travel Award</div>
-                                                    <!-- <div class="text row">
-                                                        <div class="col-md-2">
-                                                            <img alt="image" class="thumbnail img-responsive" src="img/personal/awards100x100.png" >
-                                                        </div>
-                                                        <div class="col-md-10">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
-                                                        </div>
-                                                    </div> -->
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="date">2013, 2014, 2015</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Pratt Engineering Scholarship</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="date">2013</div>
-                                                <div class="circle"></div>
-                                                <div class="data">
-                                                    <div class="subject">Dean's Scholarship</div>
-                                                </div>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                            
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </body>
 </html>
-
