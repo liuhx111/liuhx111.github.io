@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RAIL | Robot Autonomy and Intelligence Lab</title>
+  <meta name="author" content="Hangxin Liu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="lab_img/rail_lab_logo_v37.png">
+  <style>
+    /* Small page-specific additions; the site's existing stylesheet remains in use. */
+    .lab-nav {
+      text-align: center;
+      padding: 12px 0 4px;
+      font-size: 14px;
+    }
+    .lab-nav a { margin: 0 10px; }
+    .lab-intro-table, .lab-section-table {
+      width: 100%;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: separate;
+      margin: 0 auto;
+    }
+    .lab-intro-copy {
+      width: 68%;
+      padding: 20px;
+      vertical-align: middle;
+      text-align: justify;
+    }
+    .lab-logo-cell {
+      width: 32%;
+      padding: 20px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .lab-logo {
+      display: block;
+      width: 100%;
+      max-width: 210px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .lab-slideshow {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      overflow: hidden;
+      background: #f3f3f3;
+      margin: 8px auto 0;
+    }
+    .lab-slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .lab-slide.active { display: block; }
+    .slide-dots {
+      text-align: center;
+      padding: 10px 0 0;
+    }
+    .slide-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 0 4px;
+      border-radius: 50%;
+      background: #c8c8c8;
+      cursor: pointer;
+    }
+    .slide-dot.active { background: #8b0000; }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px 16px;
+      padding: 12px 20px 24px;
+    }
+    .member {
+      text-align: center;
+      min-width: 0;
+    }
+    .member-photo {
+      width: 132px;
+      height: 132px;
+      max-width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .member-name {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .member-role {
+      font-size: 13px;
+      color: #666;
+    }
+    @media (max-width: 650px) {
+      .lab-intro-copy, .lab-logo-cell {
+        display: block;
+        width: auto;
+        padding: 12px 20px;
+      }
+      .lab-logo { max-width: 150px; }
+      .member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .lab-slideshow { aspect-ratio: 4 / 3; }
+    }
+    @media (max-width: 380px) {
+      .member-photo { width: 112px; height: 112px; }
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:0">
+
+          <p style="text-align:center">
+              <name>Robot Autonomy and Intelligence Lab (RAIL)</name>
+          </p>
+
+          <!-- Lab introduction and logo -->
+          <table class="lab-intro-table">
+            <tbody>
+              <tr>
+                <td class="lab-intro-copy">
+                  <p>
+                    The Robot Autonomy and Intelligence Lab (RAIL), led by
+                    <a href="index.html">Hangxin Liu</a> at the School of Intelligence
+                    Science and Technology, Peking University, studies cognitive
+                    robotics and embodied intelligence. We aim to develop robots
+                    that can understand their surroundings, reason about the
+                    physical and functional properties of the world, and carry
+                    out complex tasks autonomously.
+                  </p>
+                  <p>
+                    Our research spans robot perception and scene understanding,
+                    physical reasoning, task and motion planning, robot learning,
+                    and cross-embodiment skill transfer. We are particularly
+                    interested in closing the loop between perception, reasoning,
+                    action, and learning so that robots can adapt to diverse
+                    environments and collaborate naturally with people.
+                  </p>
+                </td>
+                <td class="lab-logo-cell">
+                  <!-- Replace with your RAIL logo file. -->
+                  <img class="lab-logo" src="lab_img/rail_lab_logo_v37.svg" alt="RAIL lab logo">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="lab-links" style="text-align:center">
+            <a href="index.html#papers">Research</a> &nbsp;/&nbsp;
+            <a href="#member">Members</a> &nbsp;/&nbsp;
+            <a href="#news">News</a> &nbsp;/&nbsp;
+            <a href="https://space.bilibili.com/3493283368012714">Video</a>
+          </p>
+
+          <!-- Rotating lab photos -->
+          <table class="lab-section-table">
+            <tbody>
+              <tr>
+                
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Lab members -->
+          <table class="lab-section-table">
+            <tbody>
+              <tr>
+                <td style="padding:20px 20px 0;width:100%;vertical-align:middle">
+                  <heading id="member">Lab Members</heading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+            <div class="member-grid">
+              <div class="member">
+                <p class="member-name">Tengbo Yu</p>
+                <span class="member-role">Ph.D. Student</span>
+              </div>
+
+              <div class="member">
+                <p class="member-name">Hanning Wang</p>
+                <span class="member-role">Incoming Ph.D. Student</span>
+              </div>
+
+              <div class="member">
+                <p class="member-name">Pengqi Zhang</p>
+                <span class="member-role">Ph.D. Student (with Beihang)</span>
+              </div>
+
+              <div class="member">
+                <p class="member-name">Zongyuan Li</p>
+                <span class="member-role">Incoming Ph.D. Student</span>
+              </div>
+
+                <div class="member">
+                <p class="member-name">Longchang Yu</p>
+                <span class="member-role">Ph.D. Student (with Beihang) </span>
+              </div>
+
+                <div class="member">
+                <p class="member-name">Qinxin Wei</p>
+                <span class="member-role">Ph.D. Student (with ZJU)</span>
+              </div>
+
+            </div>
+
+            <table class="lab-section-table">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <heading id="news">News</heading>
+
+                    <ul class="lab-news">
+                      <li>
+                          <span class="news-date">Dec. 2026</span>
+                          Coming Soon.
+                      </li>
+                    </ul>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="lab-section-table" style="width:100%">
+              <tbody>
+                <tr>
+                  <td style="padding:0 20px 24px; text-align:center; width:100%">
+                    <p style="font-size:13px; color:#888; text-align:center; margin:0">
+                      Robot Autonomy and Intelligence Lab · Peking University
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+  <script>
+    (function () {
+      const slides = Array.from(document.querySelectorAll(".lab-slide"));
+      const dotsContainer = document.getElementById("slide-dots");
+      if (!slides.length || !dotsContainer) return;
+
+      let current = 0;
+      let timer;
+
+      slides.forEach((slide, index) => {
+        const dot = document.createElement("span");
+        dot.className = "slide-dot" + (index === 0 ? " active" : "");
+        dot.setAttribute("role", "button");
+        dot.setAttribute("tabindex", "0");
+        dot.setAttribute("aria-label", "Show photograph " + (index + 1));
+        dot.addEventListener("click", () => showSlide(index, true));
+        dot.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            showSlide(index, true);
+          }
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsContainer.children);
+
+      function showSlide(index, restartTimer) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+        if (restartTimer) startTimer();
+      }
+
+      function startTimer() {
+        window.clearInterval(timer);
+        timer = window.setInterval(() => showSlide(current + 1, false), 4500);
+      }  
+
+      startTimer();
+    })();
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".member-grid").forEach(grid => {
+        const members = Array.from(grid.querySelectorAll(".member"));
+
+        members.sort((a, b) => {
+          const nameA = a.querySelector(".member-name").textContent.trim();
+          const nameB = b.querySelector(".member-name").textContent.trim();
+
+          // Extract last name (last word)
+          const lastNameA = nameA.split(/\s+/).pop();
+          const lastNameB = nameB.split(/\s+/).pop();
+
+          return lastNameA.localeCompare(lastNameB, "en", {
+            sensitivity: "base"
+          });
+        });
+
+        members.forEach(member => grid.appendChild(member));
+      });
+    });
+  </script>
+</body>
+</html>

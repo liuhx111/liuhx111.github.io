@@ -129,3 +129,25 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.lab-slideshow {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;  /* Your slideshow ratio */
+  overflow: hidden;
+  background: #fff;
+}
+
+.lab-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.lab-slide.active {
+  display: block;
+}
